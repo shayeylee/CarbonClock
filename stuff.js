@@ -58,7 +58,7 @@ function draw(){
 	const inputHeading = (height/200)*scaleFactor;
 	const buttonText = (height/350)*scaleFactor;
 	const inputText = (height/250)*scaleFactor;
-	createCanvas(windowWidth, 5000);
+	createCanvas(windowWidth, windowHeight*7);
 	stroke(0);
 	strokeWeight(2);
 	fill(255);
