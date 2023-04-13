@@ -7,6 +7,7 @@ let countryName = '';
 let value;
 let checkCountryConstant;
 let mapCheck;
+let shaye = "shaye";
 
 function convertPathToPolygons(path) {
   let coord_point = [0, 0];
