@@ -36,7 +36,6 @@ function convertPathToPolygons(path) {
 }
 
 function setup(){
-	createCanvas(windowWidth, 100);
 	calculateBase();
 	mapSetUp();
 	w = createInput();
@@ -49,6 +48,7 @@ function windowResized() {
 }
 
 function draw(){
+	createCanvas(windowWidth, windowHeight*7);
 	const scaleFactor=width/1300;
 	const sizeHeading = (height/80)*scaleFactor;
 	const sizeSubHeading = (height/120)*scaleFactor;
@@ -58,7 +58,6 @@ function draw(){
 	const inputHeading = (height/200)*scaleFactor;
 	const buttonText = (height/350)*scaleFactor;
 	const inputText = (height/250)*scaleFactor;
-	createCanvas(windowWidth, windowHeight*7);
 	stroke(0);
 	strokeWeight(2);
 	fill(255);
