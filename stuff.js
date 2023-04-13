@@ -7,7 +7,6 @@ let countryName = '';
 let value;
 let checkCountryConstant;
 let mapCheck;
-let shaye = "shaye";
 
 function convertPathToPolygons(path) {
   let coord_point = [0, 0];
@@ -44,21 +43,21 @@ function setup(){
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, 5000);
   console.log("resized")
 }
 
 function draw(){
-	createCanvas(windowWidth, windowHeight*7);
+	createCanvas(windowWidth, 5000);
 	const scaleFactor=width/1300;
-	const sizeHeading = (height/80)*scaleFactor;
-	const sizeSubHeading = (height/120)*scaleFactor;
-	const sizeSubSubHeading = (height/120)*scaleFactor;
+	const sizeHeading = (5000/80)*scaleFactor;
+	const sizeSubHeading = (5000/120)*scaleFactor;
+	const sizeSubSubHeading = (5000/120)*scaleFactor;
 	const inputWidth = width/10;
-	const inputHeight = (height/180)*scaleFactor;
-	const inputHeading = (height/200)*scaleFactor;
-	const buttonText = (height/350)*scaleFactor;
-	const inputText = (height/250)*scaleFactor;
+	const inputHeight = (5000/180)*scaleFactor;
+	const inputHeading = (5000/200)*scaleFactor;
+	const buttonText = (5000/350)*scaleFactor;
+	const inputText = (5000/250)*scaleFactor;
 	stroke(0);
 	strokeWeight(2);
 	fill(255);
