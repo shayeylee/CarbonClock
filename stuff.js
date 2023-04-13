@@ -43,21 +43,21 @@ function setup(){
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, 5000);
+  resizeCanvas(windowWidth, windowHeight);
   console.log("resized")
 }
 
 function draw(){
-	createCanvas(windowWidth, 5000);
+	createCanvas(windowWidth, windowHeight);
 	const scaleFactor=width/1300;
-	const sizeHeading = (5000/80)*scaleFactor;
-	const sizeSubHeading = (5000/120)*scaleFactor;
-	const sizeSubSubHeading = (5000/120)*scaleFactor;
+	const sizeHeading = (windowHeight/20)*scaleFactor;
+	const sizeSubHeading = (windowHeight/25)*scaleFactor;
+	const sizeSubSubHeading = (windowHeight/30)*scaleFactor;
 	const inputWidth = width/10;
-	const inputHeight = (5000/180)*scaleFactor;
-	const inputHeading = (5000/200)*scaleFactor;
-	const buttonText = (5000/350)*scaleFactor;
-	const inputText = (5000/250)*scaleFactor;
+	const inputHeight = (windowHeight/30)*scaleFactor;
+	const inputHeading = (windowHeight/30)*scaleFactor;
+	const buttonText = (windowHeight/50)*scaleFactor;
+	const inputText = (windowHeight/45)*scaleFactor;
 	stroke(0);
 	strokeWeight(2);
 	fill(255);
@@ -101,7 +101,7 @@ function draw(){
 	text(nfc(Math.round((x+millis())/0.77674876847,0))+' metric tons', width/2, 70+sizeSubHeading+sizeHeading);
 	pop();
   push();
-  const moveY=height/35 + sizeSubHeading+sizeHeading+sizeSubHeading+sizeSubHeading+sizeSubHeading;
+  const moveY=height/7 + sizeSubHeading+sizeHeading+sizeSubHeading+sizeSubHeading+sizeSubHeading;
   const moveX=width/100;
   translate(moveX,moveY);
   scale(scaleFactor);
