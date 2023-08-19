@@ -48,10 +48,10 @@ function windowResized() {
 }
 
 function draw(){
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(windowWidth, windowHeight*1.3);
 	const scaleFactor=width/1300;
 	const sizeHeading = (windowHeight/20)*scaleFactor;
-	const sizeSubHeading = (windowHeight/25)*scaleFactor;
+	const sizeSubHeading = (windowHeight/22)*scaleFactor;
 	const sizeSubSubHeading = (windowHeight/30)*scaleFactor;
 	const inputWidth = width/10;
 	const inputHeight = (windowHeight/30)*scaleFactor;
@@ -94,8 +94,8 @@ function draw(){
 	textSize(sizeSubHeading);
 	checkCountryConstant = constantCalc(countryName);
 	if (countryName!=""){
-			text(countryName + " Clock:", width/2, 100+sizeSubHeading+sizeHeading+sizeSubHeading);
-			text(nfc(Math.round((x+millis())*checkCountryConstant,0))+' metric tons', width/2, 100+sizeSubHeading+sizeHeading+sizeSubHeading+sizeSubHeading);
+			text(countryName + " Clock:", width/2, 80+sizeSubHeading+sizeHeading+sizeSubHeading);
+			text(nfc(Math.round((x+millis())*checkCountryConstant,0))+' metric tons', width/2, 85+sizeSubHeading+sizeHeading+sizeSubHeading+sizeSubHeading);
 	}
 	textAlign(CENTER, TOP);
 	text(nfc(Math.round((x+millis())/0.77674876847,0))+' metric tons', width/2, 70+sizeSubHeading+sizeHeading);
